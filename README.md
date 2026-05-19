@@ -1,6 +1,6 @@
-# RehabCare - Orthopedic & Rehabilitation Aids Website
+# OrthoCare India - Orthopedic & Rehabilitation Products Website
 
-A professional, responsive website for a rehabilitation aids and orthopedic products company. This website showcases products, company information, and provides customer contact capabilities.
+A professional, responsive website for OrthoCare India, an established orthopedic and rehabilitation products company based in Mumbai. This website showcases products, company information, and provides customer contact capabilities.
 
 ## 📁 Project Structure
 
@@ -227,10 +227,10 @@ The website is fully responsive with breakpoints at:
 
 ## 📞 Contact Information (Default)
 
-- **Email**: info@rehabcare.com
-- **Phone**: +1 (555) 123-4567
-- **Address**: 123 Health Street, Medical City, MC 12345
-- **Hours**: Mon-Fri 9AM-6PM EST
+- **Email**: info@orthocareindia.com
+- **Phone**: +91 (22) 4089-5500
+- **Address**: D-12, Mahindra Industrial Estate, Kandivali East, Mumbai 400101
+- **Hours**: Mon-Fri 9AM-6PM IST
 
 ## 📄 License
 
