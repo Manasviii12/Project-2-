@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - RehabCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-heart-pulse"></i>
+                    <span>RehabCare</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium orthopedic and rehabilitation aids for your recovery journey</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category" onchange="filterProducts()">
+                    <option value="">All Categories</option>
+                    <option value="footwear">Footwear</option>
+                    <option value="braces">Braces & Supports</option>
+                    <option value="mobility">Mobility Aids</option>
+                    <option value="exercise">Exercise Equipment</option>
+                    <option value="back">Back Support</option>
+                    <option value="compression">Compression</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="price">Price Range:</label>
+                <select id="price" onchange="filterProducts()">
+                    <option value="">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-250">$101 - $250</option>
+                    <option value="251+">$251+</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-list" id="productsList">
+                <!-- Product items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About RehabCare</h4>
+                    <p>Leading provider of orthopedic and rehabilitation aids, dedicated to your recovery and wellness.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@rehabcare.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Health Street, Medical City, MC 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RehabCare. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Product data
+        const products = [
+            {
+                id: 1,
+                name: "Orthopedic Running Shoes",
+                category: "footwear",
+                price: 129.99,
+                rating: 4.8,
+                description: "Professional orthopedic running shoes with arch support and cushioning"
+            },
+            {
+                id: 2,
+                name: "Premium Knee Brace",
+                category: "braces",
+                price: 79.99,
+                rating: 4.9,
+                description: "Medical-grade knee support for sports and everyday activities"
+            },
+            {
+                id: 3,
+                name: "Adjustable Walking Cane",
+                category: "mobility",
+                price: 34.99,
+                rating: 4.7,
+                description: "Lightweight aluminum cane with ergonomic grip"
+            },
+            {
+                id: 4,
+                name: "Physical Therapy Resistance Bands",
+                category: "exercise",
+                price: 24.99,
+                rating: 4.6,
+                description: "Set of 5 different resistance levels for rehabilitation exercises"
+            },
+            {
+                id: 5,
+                name: "Lumbar Support Pillow",
+                category: "back",
+                price: 89.99,
+                rating: 4.8,
+                description: "Memory foam back support for posture correction and pain relief"
+            },
+            {
+                id: 6,
+                name: "Compression Sock Set",
+                category: "compression",
+                price: 44.99,
+                rating: 4.7,
+                description: "Medical-grade compression socks for improved circulation"
+            },
+            {
+                id: 7,
+                name: "Ankle Support Brace",
+                category: "braces",
+                price: 59.99,
+                rating: 4.8,
+                description: "Adjustable ankle stabilizer for sprains and recovery"
+            },
+            {
+                id: 8,
+                name: "Wrist Support Guard",
+                category: "braces",
+                price: 49.99,
+                rating: 4.7,
+                description: "Ergonomic wrist support for carpal tunnel and injuries"
+            },
+            {
+                id: 9,
+                name: "Elbow Compression Sleeve",
+                category: "compression",
+                price: 39.99,
+                rating: 4.6,
+                description: "Neoprene elbow sleeve for tennis elbow and arthritis"
+            },
+            {
+                id: 10,
+                name: "Aluminum Folding Walker",
+                category: "mobility",
+                price: 149.99,
+                rating: 4.9,
+                description: "Lightweight and portable walker with wheels and brakes"
+            },
+            {
+                id: 11,
+                name: "Therabody Massage Gun",
+                category: "exercise",
+                price: 199.99,
+                rating: 4.9,
+                description: "Professional-grade percussive massage therapy device"
+            },
+            {
+                id: 12,
+                name: "Orthopedic Insoles",
+                category: "footwear",
+                price: 59.99,
+                rating: 4.8,
+                description: "Custom-molded insoles for arch and heel pain relief"
+            },
+            {
+                id: 13,
+                name: "Cervical Neck Brace",
+                category: "back",
+                price: 69.99,
+                rating: 4.7,
+                description: "Adjustable neck support for cervical spine stabilization"
+            },
+            {
+                id: 14,
+                name: "Foam Roller Set",
+                category: "exercise",
+                price: 34.99,
+                rating: 4.6,
+                description: "3-piece foam roller set for muscle recovery and relaxation"
+            },
+            {
+                id: 15,
+                name: "Back Posture Corrector",
+                category: "back",
+                price: 54.99,
+                rating: 4.8,
+                description: "Adjustable posture support vest for better spinal alignment"
+            }
+        ];
+
+        function displayProducts(productsToShow) {
+            const productsList = document.getElementById('productsList');
+            productsList.innerHTML = '';
+
+            if (productsToShow.length === 0) {
+                productsList.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No products found matching your criteria.</p>';
+                return;
+            }
+
+            productsToShow.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-item';
+                productCard.innerHTML = `
+                    <div class="product-image">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-rating">
+                            ${'<i class="fas fa-star"></i>'.repeat(Math.floor(product.rating))} <span>(${product.rating})</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$${product.price.toFixed(2)}</span>
+                            <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Add to Cart</button>
+                        </div>
+                    </div>
+                `;
+                productsList.appendChild(productCard);
+            });
+        }
+
+        function filterProducts() {
+            const categoryFilter = document.getElementById('category').value;
+            const priceFilter = document.getElementById('price').value;
+
+            let filtered = products;
+
+            if (categoryFilter) {
+                filtered = filtered.filter(p => p.category === categoryFilter);
+            }
+
+            if (priceFilter) {
+                const [min, max] = priceFilter.includes('+') 
+                    ? [251, Infinity] 
+                    : priceFilter.split('-').map(Number);
+                filtered = filtered.filter(p => p.price >= min && p.price <= max);
+            }
+
+            displayProducts(filtered);
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            alert(`${product.name} added to cart! Price: $${product.price.toFixed(2)}`);
+        }
+
+        // Initial display
+        displayProducts(products);
+    </script>
+</body>
+</html>
