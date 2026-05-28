@@ -3,227 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - OrthoCare India</title>
+    <title>Contact | Modern Medical Aids</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-heart-pulse"></i>
-                    <span>OrthoCare India</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heart-pulse"></i>
+                Modern Medical Aids
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header page-header-contact">
         <div class="container">
-            <h1>Contact OrthoCare India</h1>
-            <p>Get in touch with our team for product information and support</p>
+            <h1>Contact Modern Medical Aids</h1>
+            <p>Reach out for dealer enquiries, export orders, product support, or custom rehabilitation solutions.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Head Office</h3>
-                            <p>D-12, Mahindra Industrial Estate<br>Kandivali East, Mumbai 400101<br>Maharashtra, India</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Phone Numbers</h3>
-                            <p>+91 (22) 4089-5500<br>+91 (22) 4089-5501<br>Mon-Fri: 9AM-6PM IST</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Email Address</h3>
-                            <p>info@orthocareindia.com<br>support@orthocareindia.com<br>sales@orthocareindia.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Business Hours</h3>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM IST<br>Saturday: 10:00 AM - 4:00 PM IST<br>Sunday: Closed</p>
-                        </div>
+        <div class="container contact-grid">
+            <div class="contact-info-panel">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Office</h3>
+                        <p>D-98, Gali No.2, 3rd Pusta, Sonia Vihar, Delhi 110094</p>
                     </div>
                 </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h2>Send us a Message</h2>
-                    <form id="contactForm" onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="product">Product Inquiry</option>
-                                <option value="support">Technical Support</option>
-                                <option value="order">Order Status</option>
-                                <option value="complaint">Complaint</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">I agree to be contacted regarding my inquiry</label>
-                        </div>
-                        <button type="submit" class="primary-button">Send Message</button>
-                    </form>
-                    <div id="formMessage" style="margin-top: 15px; padding: 10px; border-radius: 5px; display: none;"></div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+91 95601 67000</p>
+                        <p>Mon - Sat: 9AM - 7PM IST</p>
+                    </div>
                 </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@rehabilitationaids.net</p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <img src="assets/images/contact-map.jpg" alt="Office map" loading="lazy">
+                </div>
+            </div>
+            <div class="contact-form-panel">
+                <h2>Send a Message</h2>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Inquiry Type *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="order">Order Status</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I agree to be contacted regarding my inquiry.</label>
+                    </div>
+                    <button type="submit" class="primary-button">Submit Request</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
-            <h2>Frequently Asked Questions</h2>
+            <div class="section-header">
+                <span>Need help?</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
             <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Do you offer international shipping?</h3>
-                    <p>Yes! We ship to most countries worldwide. Shipping costs and delivery times vary by location. Contact us for specific details about your destination.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What is your return policy?</h3>
-                    <p>We offer a 30-day money-back guarantee on all products. Items must be unused and in original packaging. Contact our support team to initiate a return.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Are your products medical-grade?</h3>
-                    <p>Yes, all our orthopedic products are medical-grade and FDA approved. They meet international healthcare standards and certifications.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How can I get expert advice on product selection?</h3>
-                    <p>Our healthcare professionals are available for consultation via phone, email, or online chat. They can recommend the best products for your needs.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do you offer wholesale or bulk discounts?</h3>
-                    <p>Yes! We offer special pricing for bulk orders, hospitals, clinics, and healthcare institutions. Please contact our sales team for more information.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How long does shipping usually take?</h3>
-                    <p>Standard delivery within the US typically takes 5-7 business days. Express delivery options are also available for urgent orders.</p>
-                </div>
+                <article class="faq-item">
+                    <h3>Do you ship across India?</h3>
+                    <p>Yes, we provide nationwide delivery with tracking and delivery updates for every order.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Can I return a product?</h3>
+                    <p>Returns are accepted within 30 days if the item is unused and in original packaging.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>How quickly can I receive a product?</h3>
+                    <p>Standard delivery is 5-7 business days. Express shipping is available for urgent rehabilitation needs.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Do you offer professional guidance?</h3>
+                    <p>Yes, our experts can help you select the right support product based on your injury or recovery plan.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>About OrthoCare India</h4>
-                    <p>Established orthopedic and rehabilitation solutions provider based in Mumbai, serving hospitals, clinics, and patients across India since 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: info@orthocareindia.com</p>
-                    <p>Phone: +91 (22) 4089-5500</p>
-                    <p>Address: Kandivali East, Mumbai 400101</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+        <div class="container footer-grid">
+            <div>
+                <h4>Modern Medical Aids</h4>
+                <p>Trusted rehabilitation support and equipment for patients and healthcare professionals.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Email: info@rehabilitationaids.net</p>
+                <p>Phone: +91 95601 67000</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 OrthoCare India Pvt. Ltd. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Modern Medical Aids. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
         function handleSubmit(event) {
             event.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            // Display success message
             const formMessage = document.getElementById('formMessage');
-            formMessage.style.display = 'block';
-            formMessage.style.backgroundColor = '#d4edda';
-            formMessage.style.color = '#155724';
-            formMessage.style.border = '1px solid #c3e6cb';
-            formMessage.innerHTML = `<strong>Thank you!</strong> We've received your message and will get back to you as soon as possible.`;
-
-            // Reset form
+            formMessage.className = 'form-message success';
+            formMessage.textContent = 'Thank you! Your message has been received. We will respond within 24 hours.';
             document.getElementById('contactForm').reset();
-
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
+            setTimeout(() => { formMessage.textContent = ''; }, 6000);
         }
     </script>
     <script src="script.js"></script>

@@ -3,265 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - OrthoCare India</title>
+    <title>Products | Modern Medical Aids</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-heart-pulse"></i>
-                    <span>OrthoCare India</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heart-pulse"></i>
+                Modern Medical Aids
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header page-header-products">
         <div class="container">
-            <h1>Our Product Catalog</h1>
-            <p>Wide range of orthopedic supports, mobility aids, and rehabilitation equipment</p>
+            <h1>Manufactured Rehabilitation & Orthopaedic Products</h1>
+            <p>Modern Medical Aids produces rehabilitation products, orthopedic supports, fracture aids, and hospital supplies for domestic and export markets.</p>
         </div>
     </section>
 
-    <!-- Filters -->
     <section class="filters-section">
-        <div class="container">
+        <div class="container filter-grid">
             <div class="filter-group">
-                <label for="category">Category:</label>
+                <label for="category">Category</label>
                 <select id="category" onchange="filterProducts()">
                     <option value="">All Categories</option>
-                    <option value="footwear">Footwear</option>
-                    <option value="braces">Braces & Supports</option>
-                    <option value="mobility">Mobility Aids</option>
-                    <option value="exercise">Exercise Equipment</option>
+                    <option value="cervical">Cervical Support</option>
                     <option value="back">Back Support</option>
-                    <option value="compression">Compression</option>
+                    <option value="fracture">Fracture Aids</option>
+                    <option value="traction">Traction Kits</option>
+                    <option value="neoprene">Neoprene Products</option>
+                    <option value="knee">Knee & Ankle Support</option>
                 </select>
             </div>
             <div class="filter-group">
-                <label for="price">Price Range:</label>
+                <label for="price">Price Range</label>
                 <select id="price" onchange="filterProducts()">
                     <option value="">All Prices</option>
-                    <option value="0-50">$0 - $50</option>
-                    <option value="51-100">$51 - $100</option>
-                    <option value="101-250">$101 - $250</option>
-                    <option value="251+">$251+</option>
+                    <option value="0-5000">₹0 - ₹5,000</option>
+                    <option value="5001-10000">₹5,001 - ₹10,000</option>
+                    <option value="10001-15000">₹10,001 - ₹15,000</option>
+                    <option value="15001+">₹15,001+</option>
                 </select>
             </div>
         </div>
     </section>
 
-    <!-- Products Grid -->
     <section class="products-section">
         <div class="container">
-            <div class="products-list" id="productsList">
-                <!-- Product items will be populated by JavaScript -->
-            </div>
+            <div class="products-list" id="productsList"></div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>About OrthoCare India</h4>
-                    <p>Established orthopedic and rehabilitation solutions provider based in Mumbai, serving hospitals, clinics, and patients across India since 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: info@rehabcare.com</p>
-                    <p>Phone: +91 (11) 4567-8900</p>
-                    <p>Address: 456 Care Lane, Delhi 110001, India</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
+        <div class="container footer-grid">
+            <div>
+                <h4>Modern Medical Aids</h4>
+                <p>Leading manufacturer and exporter of orthopedic appliances and rehabilitation products from Delhi.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Email: info@rehabilitationaids.net</p>
+                <p>Phone: +91 95601 67000</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 OrthoCare India Pvt. Ltd. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Modern Medical Aids. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Product data
         const products = [
             {
                 id: 1,
-                name: "Orthopedic Running Shoes",
-                category: "footwear",
-                price: 7999,
-                rating: 4.8,
-                description: "Professional orthopedic running shoes with arch support and cushioning"
+                name: "Cervical Collar",
+                category: "cervical",
+                price: 2999,
+                rating: 4.9,
+                image: "assets/images/product-5.jpg",
+                description: "High-quality cervical collar for neck support during recovery and immobilization."
             },
             {
                 id: 2,
-                name: "Premium Knee Brace",
-                category: "braces",
-                price: 4999,
-                rating: 4.9,
-                description: "Medical-grade knee support for sports and everyday activities"
+                name: "Sacro Lumbar Belt",
+                category: "back",
+                price: 4699,
+                rating: 4.8,
+                image: "assets/images/product-7.jpg",
+                description: "Adjustable back support belt for lumbar stabilization and pain relief."
             },
             {
                 id: 3,
-                name: "Adjustable Walking Cane",
-                category: "mobility",
-                price: 2199,
+                name: "Shoulder Immobilizer",
+                category: "fracture",
+                price: 3899,
                 rating: 4.7,
-                description: "Lightweight aluminum cane with ergonomic grip"
+                image: "assets/images/product-10.jpg",
+                description: "Fracture aid for shoulder and upper arm immobilization after injury."
             },
             {
                 id: 4,
-                name: "Physical Therapy Resistance Bands",
-                category: "exercise",
-                price: 1599,
+                name: "Cervical Traction Kit",
+                category: "traction",
+                price: 8499,
                 rating: 4.6,
-                description: "Set of 5 different resistance levels for rehabilitation exercises"
+                image: "assets/images/product-8.jpg",
+                description: "Portable cervical traction kit for gentle decompression therapy."
             },
             {
                 id: 5,
-                name: "Lumbar Support Pillow",
-                category: "back",
-                price: 5499,
+                name: "Neoprene Knee Support",
+                category: "neoprene",
+                price: 2799,
                 rating: 4.8,
-                description: "Memory foam back support for posture correction and pain relief"
+                image: "assets/images/product-3.jpg",
+                description: "Elastic neoprene knee brace to provide compression and stability."
             },
             {
                 id: 6,
-                name: "Compression Sock Set",
-                category: "compression",
-                price: 2799,
+                name: "Ankle Support Strap",
+                category: "knee",
+                price: 2399,
                 rating: 4.7,
-                description: "Medical-grade compression socks for improved circulation"
+                image: "assets/images/product-9.jpg",
+                description: "Comfortable ankle brace for sprain relief and rehabilitation support."
             },
             {
                 id: 7,
-                name: "Ankle Support Brace",
-                category: "braces",
-                price: 3699,
+                name: "Cast Shoe",
+                category: "fracture",
+                price: 3199,
                 rating: 4.8,
-                description: "Adjustable ankle stabilizer for sprains and recovery"
+                image: "assets/images/product-6.jpg",
+                description: "Durable cast shoe for safe walking while protecting lower limb casts."
             },
             {
                 id: 8,
-                name: "Wrist Support Guard",
-                category: "braces",
-                price: 3099,
-                rating: 4.7,
-                description: "Ergonomic wrist support for carpal tunnel and injuries"
+                name: "Orthopedic Back Rest",
+                category: "back",
+                price: 5599,
+                rating: 4.9,
+                image: "assets/images/product-12.jpg",
+                description: "Ergonomic back rest for posture support and comfortable sitting."
             },
             {
                 id: 9,
-                name: "Elbow Compression Sleeve",
-                category: "compression",
-                price: 2499,
-                rating: 4.6,
-                description: "Neoprene elbow sleeve for tennis elbow and arthritis"
-            },
-            {
-                id: 10,
-                name: "Aluminum Folding Walker",
-                category: "mobility",
-                price: 9199,
-                rating: 4.9,
-                description: "Lightweight and portable walker with wheels and brakes"
-            },
-            {
-                id: 11,
-                name: "Therabody Massage Gun",
-                category: "exercise",
-                price: 12299,
-                rating: 4.9,
-                description: "Professional-grade percussive massage therapy device"
-            },
-            {
-                id: 12,
-                name: "Orthopedic Insoles",
-                category: "footwear",
-                price: 3699,
-                rating: 4.8,
-                description: "Custom-molded insoles for arch and heel pain relief"
-            },
-            {
-                id: 13,
-                name: "Cervical Neck Brace",
-                category: "back",
-                price: 4299,
+                name: "Elastic Wrist Support",
+                category: "neoprene",
+                price: 1899,
                 rating: 4.7,
-                description: "Adjustable neck support for cervical spine stabilization"
-            },
-            {
-                id: 14,
-                name: "Foam Roller Set",
-                category: "exercise",
-                price: 2199,
-                rating: 4.6,
-                description: "3-piece foam roller set for muscle recovery and relaxation"
-            },
-            {
-                id: 15,
-                name: "Back Posture Corrector",
-                category: "back",
-                price: 5499,
-                rating: 4.8,
-                description: "Adjustable posture support vest for better spinal alignment"
+                image: "assets/images/product-11.jpg",
+                description: "Stretchable wrist support for strain recovery and enhanced joint stability."
             }
         ];
+
+        function renderStars(rating) {
+            return '<i class="fas fa-star"></i>'.repeat(Math.floor(rating));
+        }
 
         function displayProducts(productsToShow) {
             const productsList = document.getElementById('productsList');
             productsList.innerHTML = '';
 
-            if (productsToShow.length === 0) {
-                productsList.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No products found matching your criteria.</p>';
+            if (!productsToShow.length) {
+                productsList.innerHTML = '<p class="empty-state">No products match your selection. Please try another filter.</p>';
                 return;
             }
 
             productsToShow.forEach(product => {
-                const productCard = document.createElement('div');
+                const productCard = document.createElement('article');
                 productCard.className = 'product-item';
                 productCard.innerHTML = `
                     <div class="product-image">
-                        <i class="fas fa-box"></i>
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3>${product.name}</h3>
                         <p class="product-description">${product.description}</p>
-                        <div class="product-rating">
-                            ${'<i class="fas fa-star"></i>'.repeat(Math.floor(product.rating))} <span>(${product.rating})</span>
-                        </div>
+                        <div class="product-rating">${renderStars(product.rating)} <span>${product.rating.toFixed(1)}</span></div>
                         <div class="product-footer">
                             <span class="price">₹${product.price}</span>
                             <button class="add-to-cart-btn" onclick="addToCart(${product.id})">Add to Cart</button>
@@ -275,7 +225,6 @@
         function filterProducts() {
             const categoryFilter = document.getElementById('category').value;
             const priceFilter = document.getElementById('price').value;
-
             let filtered = products;
 
             if (categoryFilter) {
@@ -283,9 +232,7 @@
             }
 
             if (priceFilter) {
-                const [min, max] = priceFilter.includes('+') 
-                    ? [251, Infinity] 
-                    : priceFilter.split('-').map(Number);
+                const [min, max] = priceFilter.includes('+') ? [15001, Infinity] : priceFilter.split('-').map(Number);
                 filtered = filtered.filter(p => p.price >= min && p.price <= max);
             }
 
@@ -293,12 +240,14 @@
         }
 
         function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
-            alert(`${product.name} added to cart! Price: ₹${product.price}`);
+            const product = products.find(item => item.id === productId);
+            alert(`${product.name} has been added to your cart for ₹${product.price}.`);
         }
 
-        // Initial display
-        displayProducts(products);
+        document.addEventListener('DOMContentLoaded', () => {
+            displayProducts(products);
+        });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

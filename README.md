@@ -1,222 +1,143 @@
-# OrthoCare India - Orthopedic & Rehabilitation Products Website
+# Modern Medical Aids - Orthopedic & Rehabilitation Products Website
 
-A professional, responsive website for OrthoCare India, an established orthopedic and rehabilitation products company based in Mumbai. This website showcases products, company information, and provides customer contact capabilities.
+A responsive static website for Modern Medical Aids, a Delhi-based manufacturer and exporter of orthopedic appliances, rehabilitation supports, fracture aids, and hospital supplies.
 
 ## 📁 Project Structure
 
 ```
 Project-2-/
-├── index.html          # Home page
-├── products.html       # Products catalog with filtering
-├── about.html          # Company information and team
-├── contact.html        # Contact form and support information
-├── styles.css          # Complete styling and responsive design
-├── script.js           # JavaScript functionality and interactivity
-└── README.md           # This file
+├── index.html          # Home page with company overview and product highlights
+├── products.html       # Product catalog with filters and pricing
+├── about.html          # Company story, mission, team, and achievements
+├── contact.html        # Contact form and office details
+├── styles.css          # Responsive layout and visual design
+├── script.js           # Navigation and interactive page behavior
+└── README.md           # Project documentation
 ```
 
 ## 🎯 Features
 
 ### Home Page (`index.html`)
-- Eye-catching hero section with call-to-action
-- Why Choose RehabCare section with 4 feature highlights
-- Featured products showcase (6 products)
-- Customer testimonials with ratings
-- Call-to-action section
-- Responsive navigation bar
-- Professional footer with social links
+- Hero section with Modern Medical Aids branding
+- Manufacturing and quality commitment messaging
+- Featured rehabilitation product categories
+- Customer testimonial section
+- Clear call-to-action to products and contact
+- Local image assets and responsive layout
 
 ### Products Page (`products.html`)
-- Complete product catalog with 15 products
-- Filter by category (Footwear, Braces, Mobility, Exercise, Back Support, Compression)
-- Filter by price range
-- Product cards with ratings and pricing
-- Add to cart functionality
-- Responsive grid layout
+- Rehabilitation and orthopedic product catalog
+- Filter by category and price range
+- Product cards with local image support
+- Add to cart interaction (demo)
+- Responsive product layout for desktop and mobile
 
 ### About Page (`about.html`)
-- Company story and mission
-- Mission, Vision, and Values cards
-- Expert team member profiles
-- Achievement statistics
-- Industry certifications
-- Professional imagery
+- Company history and manufacturing focus
+- Mission, vision, and values section
+- Team profiles and service commitment
+- Achievement statistics and business credibility
 
 ### Contact Page (`contact.html`)
-- Contact information (address, phone, email, hours)
-- Professional contact form with validation
-- Frequently Asked Questions (FAQ)
-- Responsive design for mobile
-- Form success message
-
-## 🎨 Design Features
-
-### Color Scheme
-- **Primary Blue**: `#0066cc` - Main actions and highlights
-- **Secondary Cyan**: `#00b4d8` - Accents and secondary actions
-- **Success Green**: `#06d6a0` - Positive feedback
-- **Gradient Purple**: Used for hero sections and backgrounds
-
-### Responsive Design
-- **Desktop**: Full multi-column layouts
-- **Tablet**: Optimized 2-column layouts
-- **Mobile**: Single column layouts with responsive navigation
-- **Hamburger Menu**: Mobile-friendly navigation
-
-### Interactive Elements
-- Smooth scrolling navigation
-- Hover animations on cards and buttons
-- Mobile hamburger menu
-- Back-to-top button
-- Intersection Observer animations
-- Counter animations for achievements
-- Form validation
+- Office address and Delhi contact details
+- Phone and email information for enquiries
+- Contact form with submission feedback
+- FAQ section for common buyer questions
+- Local image assets for office/map visuals
 
 ## 🚀 Getting Started
 
-### Opening the Website
+### Open the Website Locally
 
-1. **Using a Local Server** (Recommended):
+1. **Recommended: Local server**
    ```bash
-   # Using Python 3
+   cd /workspaces/Project-2-
    python -m http.server 8000
-   
-   # Using Python 2
-   python -m SimpleHTTPServer 8000
-   
-   # Using Node.js (if http-server installed)
-   http-server
    ```
-   Then visit: `http://localhost:8000`
+   Then visit `http://localhost:8000`
 
-2. **Direct File Opening**:
-   - Simply open `index.html` in a web browser
-   - Note: Some features may have limitations with the `file://` protocol
+2. **Direct open**
+   - Open `index.html` directly in a browser
+   - Note: some interactions may be limited under `file://`
 
-### Browser Compatibility
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Android)
+### Recommended Browsers
+- Chrome
+- Firefox
+- Edge
+- Safari
+- Mobile browsers on Android and iOS
 
 ## 📦 Dependencies
 
-All dependencies are from CDN, no local installation required:
+This project uses no local npm dependencies.
 
-- **Font Awesome Icons**: For beautiful icons throughout the site
-- **Google Fonts**: Modern, readable fonts (via system fonts)
-- No jQuery or other frameworks - Pure vanilla JavaScript
+- `styles.css` for all styling
+- `script.js` for menu, filtering, and form behavior
+- Font Awesome CDN for icons
+- Local image assets stored in `assets/images`
 
 ## 🛠️ Customization
 
 ### Update Company Information
-Edit the following files to customize company details:
+Change the company name, address, email, and phone across:
+- `index.html`
+- `about.html`
+- `contact.html`
+- `products.html` (footer section)
 
-1. **Company Name**: Replace "RehabCare" with your company name
-2. **Contact Info**: Update email, phone, and address in:
-   - `index.html` (footer)
-   - `contact.html` (contact section)
-3. **Products**: Modify the products array in `products.html`
-4. **Team**: Update team member information in `about.html`
-5. **Social Links**: Update footer social media links in all pages
-
-### Add/Remove Products
-
+### Update Products
 Edit the `products` array in `products.html`:
 
 ```javascript
 const products = [
-    {
-        id: 1,
-        name: "Product Name",
-        category: "footwear", // or braces, mobility, etc.
-        price: 129.99,
-        rating: 4.8,
-        description: "Product description here"
-    },
-    // Add more products...
+  {
+    id: 1,
+    name: "Cervical Collar",
+    category: "cervical",
+    price: 2999,
+    rating: 4.9,
+    image: "assets/images/product-5.jpg",
+    description: "High-quality cervical collar for neck support during recovery."
+  },
+  // Add or update product objects...
 ];
 ```
 
-### Modify Colors
+### Change Visual Style
+Update CSS variables and styles in `styles.css` to change colors, typography, and spacing.
 
-Update CSS variables in `styles.css`:
+## 📱 Responsive Design
 
-```css
-:root {
-    --primary-color: #0066cc;
-    --secondary-color: #00b4d8;
-    --success-color: #06d6a0;
-    /* ... more colors ... */
-}
-```
+- Mobile-first layout
+- Tablet breakpoint for multi-column content
+- Desktop layout with full navigation and page sections
+- Touch-friendly buttons and responsive images
 
-## 📱 Mobile Optimization
+## ✅ Current Branding and Contact
+- Company: Modern Medical Aids
+- Email: `info@rehabilitationaids.net`
+- Phone: `+91 95601 67000`
+- Address: `D-98, Gali No.2, 3rd Pusta, Sonia Vihar, Delhi 110094`
 
-The website is fully responsive with breakpoints at:
-- **768px**: Tablet view (hamburger menu activates)
-- **480px**: Mobile phone view (single column layouts)
+## 📝 Project Pages
 
-## ✅ Product Categories Available
+| Page | Purpose |
+|------|---------|
+| `index.html` | Brand introduction, product categories, testimonials |
+| `products.html` | Browse rehabilitation product catalog |
+| `about.html` | Company story, mission, team, achievements |
+| `contact.html` | Contact details, form, FAQ |
 
-1. **Orthopedic Footwear** - Specialized shoes and insoles
-2. **Braces & Supports** - Knee, ankle, wrist, elbow supports
-3. **Mobility Aids** - Canes, walkers, crutches
-4. **Exercise Equipment** - Resistance bands, foam rollers, massage guns
-5. **Back Support** - Lumbar support, posture correctors, neck braces
-6. **Compression Garments** - Compression socks and sleeves
+## 🌟 Notes
 
-## 🔒 Security Features
+- All images are served locally from `assets/images`
+- The site is built with static HTML, CSS, and vanilla JavaScript
+- The product list is easily customizable in `products.html`
 
-- HIPAA compliance ready (for healthcare data)
-- Form input validation
-- Cross-site scripting (XSS) safe practices
-- Responsive security headers ready
+## ⚠️ Important
 
-## 📊 SEO Ready
+This website is a static project for demonstration and marketing. It does not include a backend or live e-commerce checkout.
 
-- Semantic HTML structure
-- Meta tags for search engines
-- Mobile-friendly design
-- Fast loading with CSS/JS optimization
-
-## 🎓 Key JavaScript Features
-
-1. **Mobile Menu Toggle**: Hamburger menu for mobile devices
-2. **Active Link Highlighting**: Shows current page in navigation
-3. **Smooth Scrolling**: Navigation links scroll smoothly to sections
-4. **Scroll Animations**: Cards animate in when scrolled into view
-5. **Back-to-Top Button**: Appears after scrolling down
-6. **Form Validation**: Client-side form validation
-7. **Counter Animation**: Animated statistics on achievement section
-
-## 📝 Pages & Sections
-
-| Page | Sections | Purpose |
-|------|----------|---------|
-| index.html | Hero, Features, Products, Testimonials, CTA | Landing page |
-| products.html | Filters, Product Grid | Browse & filter products |
-| about.html | Company Story, Mission, Team, Achievements | Company information |
-| contact.html | Info, Contact Form, FAQ | Get in touch |
-
-## 🎯 Call-to-Action Points
-
-- Hero section button → Products page
-- "View All Products" button → Products page
-- "Shop Now" in CTA section → Products page
-- Contact links in footer → Contact page
-
-## 🔍 Popular Products
-
-1. Orthopedic Running Shoes - $129.99
-2. Premium Knee Brace - $79.99
-3. Aluminum Folding Walker - $149.99
-4. Therabody Massage Gun - $199.99
-5. Lumbar Support Pillow - $89.99
-6. Physical Therapy Resistance Bands - $24.99
-
-## 🌟 Features Highlight
 
 ✨ **Modern Design** - Professional gradient backgrounds and animations
 📱 **Mobile First** - Optimized for all device sizes
@@ -260,6 +181,6 @@ For customization help or technical support, refer to the code comments and stru
 
 ---
 
-**Created for**: Rehabilitation Aids & Orthopedic Products Company  
+**Created for**: Modern Medical Aids – Orthopedic Appliances & Rehabilitation Products  
 **Last Updated**: 2024  
 **Version**: 1.0
