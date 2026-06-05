@@ -1,6 +1,6 @@
-# Modern Medical Aids - Orthopedic & Rehabilitation Products Website
+# Rehabilitation Aids - Orthopedic & Rehabilitation Products Website
 
-A responsive static website for Modern Medical Aids, a Delhi-based manufacturer and exporter of orthopedic appliances, rehabilitation supports, fracture aids, and hospital supplies.
+A responsive static website for Rehabilitation Aids, a Delhi-based manufacturer and exporter of orthopedic appliances, rehabilitation supports, fracture aids, and hospital supplies.
 
 ## 📁 Project Structure
 
@@ -18,7 +18,7 @@ Project-2-/
 ## 🎯 Features
 
 ### Home Page (`index.html`)
-- Hero section with Modern Medical Aids branding
+  - Hero section with Rehabilitation Aids branding
 - Manufacturing and quality commitment messaging
 - Featured rehabilitation product categories
 - Customer testimonial section
@@ -114,7 +114,7 @@ Update CSS variables and styles in `styles.css` to change colors, typography, an
 - Touch-friendly buttons and responsive images
 
 ## ✅ Current Branding and Contact
-- Company: Modern Medical Aids
+- Company: Rehabilitation Aids
 - Email: `info@rehabilitationaids.net`
 - Phone: `+91 95601 67000`
 - Address: `D-98, Gali No.2, 3rd Pusta, Sonia Vihar, Delhi 110094`
@@ -148,10 +148,10 @@ This website is a static project for demonstration and marketing. It does not in
 
 ## 📞 Contact Information (Default)
 
-- **Email**: info@orthocareindia.com
-- **Phone**: +91 (22) 4089-5500
-- **Address**: D-12, Mahindra Industrial Estate, Kandivali East, Mumbai 400101
-- **Hours**: Mon-Fri 9AM-6PM IST
+- **Email**: info@rehabilitationaids.net
+- **Phone**: +91 95601 67000
+- **Address**: D-98, Gali No.2, 3rd Pusta, Sonia Vihar, Delhi 110094
+- **Hours**: Mon-Sat 9AM-7PM IST
 
 ## 📄 License
 
@@ -181,6 +181,6 @@ For customization help or technical support, refer to the code comments and stru
 
 ---
 
-**Created for**: Modern Medical Aids – Orthopedic Appliances & Rehabilitation Products  
+**Created for**: Rehabilitation Aids – Orthopedic Appliances & Rehabilitation Products  
 **Last Updated**: 2024  
 **Version**: 1.0
