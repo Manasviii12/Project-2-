@@ -182,5 +182,3 @@ For customization help or technical support, refer to the code comments and stru
 ---
 
 **Created for**: Rehabilitation Aids – Orthopedic Appliances & Rehabilitation Products  
-**Last Updated**: 2024  
-**Version**: 1.0
